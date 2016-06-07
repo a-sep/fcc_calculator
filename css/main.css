@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+
+body {
+    background-color: #193441;
+    color: #E6E2AF;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1.2px 1.2px 0 rgba(0, 0, 0, 0.5);
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover, a:visited {
+    color: #A7A37E;
+    text-decoration: none;
+}
+
+
