@@ -22,14 +22,26 @@
 </head>
 <body>
 <div class="container text-center">
-FreeCodeCamp Calculator
+    FreeCodeCamp Calculator
     </br>
     </br>
     comming soon :)
+    <div>
+        blablablablba
+    </div>
     </br>
     </br>
     </br>
 </div>
+
+<div id="map" style="width: 400px; height: 300px"></div>
+<label for="latitude">Latitude:</label>
+<input type="text" id="latitude" value="59.942402"/><br/>
+<label for="longitude">Longitude:</label>
+<input type="text" id="longitude" value="30.293661"/><br/>
+<input type="submit" value="Show map"
+       onclick=" showMap(document.getElementById('latitude').value,document.getElementById('longitude').value);"/>
+
 
 <footer class="footer text-center">
     <p class="text-muted">
