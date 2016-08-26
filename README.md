@@ -1,8 +1,9 @@
 # Calculator
 
-ver. 0.5
+ver. 1.0
 
 FreeCodeCamp Calculator project.
+Status:
 html - OK
 css - OK
-js - in tests...
+js - OK

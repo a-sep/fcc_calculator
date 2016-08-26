@@ -1,60 +1,68 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400);
-
 body {
-    background-color: #79ac55;
+    background-color: #85714d;
     margin: 0;
     padding: 0;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
     font-family: 'Lato', sans-serif;
+    color: #6e1039;
 }
-
-#calculator {
-    background-color: #cccccc;
-    margin: 40px auto 25px auto;
-    padding: 0px 15px 0px 15px;
+.baza {
     width: 400px;
-    text-align: center;
-
 }
-
-#input {
-    background-color: #f1f1f1;
-    border: 1px solid #dddddd;
-    border-radius: 1px;
-    height: 60px;
+.calculator {
+    background-color: #C7B07B;
+    margin: 40px auto 25px auto;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+.display {
+    background-color: #FFF6D9;
+    /*border: 1px solid #dddddd;*/
+    /*border-radius: 1px;*/
+    height: 1.5em;
     /*width: 400px;*/
-    margin: 10px;
-    padding: 10px;
+    margin: 0 10px 10px 10px;
+    /*padding: 10px;*/
     text-align: right;
     vertical-align: middle;
     font-size: 2em;
-    /*overflow-x: visible;*/
+    /*overflow-x: hidden;*/
     /*transition: all 2s ease-in-out;*/
 }
-
+.log {
+    background-color: #FFF6D9;
+    /*border: 1px solid #dddddd;*/
+    /*border-radius: 1px;*/
+    height: 1.5em;
+    /*width: 400px;*/
+    margin: 10px 10px 0 10px;
+    /*padding: 10px;*/
+    text-align: right;
+    vertical-align: middle;
+    font-size: 1em;
+    /*overflow-x: hidden;*/
+    /*transition: all 2s ease-in-out;*/
+}
 .row div {
     padding: 30px;
     font-size: 1.5em;
     transition: all .15s ease-in-out;
-
-
 }
-
 .row div:hover {
-    background-color: #f1f1f1;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    border-color: #eeeeee;
+    background-color: #E8D9AC;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    /*border-color: #eeeeee;*/
 }
-
 .row div:active {
+    color: #000000;
+    font-weight: bold;
     font-weight: bold;
 }
-
 a {
-    color: inherit;
+    color: #6e1039;
 }
-
 a:hover, a:visited {
     color: #A7A37E;
     text-decoration: none;
