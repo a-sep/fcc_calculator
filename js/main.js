@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-// ========= ver. 1.5  ===========
+// ========= ver. 2.0  ===========
 // log saves all inputs, only '=' counts result
 
 $(document).ready(function() {

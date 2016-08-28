@@ -65,7 +65,8 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 textarea {
-  resize: none;
-  border: none;
-  overflow: hidden;
+    resize: none;
+    border: none;
+    /*overflow: hidden;*/
+    width: 100%;
 }
