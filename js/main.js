@@ -6,10 +6,13 @@ $(document).ready(function() {
     let display = '0';
     let log = [];
     let symbols = ['/', '*', '+', '-'];
+    let rowLog = $('#log').attr('rows');
+    let rowDisplay = $('#display').attr('rows');
 
     $('#display').text(display);
     $('.row div').on("click", function() {
         let $btn = $(this).text();
+
         switch ($btn) {
             case "=":
                 display = eval(log.join('')); // jshint ignore:line
@@ -19,6 +22,8 @@ $(document).ready(function() {
             case "AC":
                 display = '0';
                 log = [];
+                rowLog = 1;
+                rowDisplay = 1;
                 break;
             case "CE":
                 // CE delete last number and symbol from log
@@ -28,6 +33,9 @@ $(document).ready(function() {
                 if (Math.max(...lastSymbol) === -1) {
                     log = [];
                 }
+                // adjust height of log and display textareas
+                rowLog = Math.ceil(log.length / 28);
+                rowDisplay = Math.ceil(display.length / 14);
                 // console.log('last', Math.max(...lastSymbol));
                 break;
             case ".":
@@ -89,6 +97,17 @@ $(document).ready(function() {
                     }
                 }
         }
+
+        // adjust height of log and display textareas
+        if (log.length === 28 * rowLog) {
+            rowLog++;
+        }
+        if (display.length === 14 * rowDisplay) {
+            rowDisplay++;
+        }
+
+        $('#log').attr('rows', rowLog);
+        $('#display').attr('rows', rowDisplay);
         $('#display').text(display);
         $('#log').text(log.join(''));
         // console.log(log);
