@@ -4,9 +4,6 @@ Final ver. 2.0
 
 FreeCodeCamp Calculator project.
 
-Status:
-html - OK
-css - OK
-js - OK
+Status: html - OK css - OK js - OK
 
-tests - in progres...
+Try it here <http://a-sep.github.io/fcc_calculator/>
